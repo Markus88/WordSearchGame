@@ -1,0 +1,15 @@
+C:\Users\patri\source\repos\WordSearchGame\WordSearchGame\bin\Debug\net6.0-windows\WordSearchGame.exe
+C:\Users\patri\source\repos\WordSearchGame\WordSearchGame\bin\Debug\net6.0-windows\WordSearchGame.deps.json
+C:\Users\patri\source\repos\WordSearchGame\WordSearchGame\bin\Debug\net6.0-windows\WordSearchGame.runtimeconfig.json
+C:\Users\patri\source\repos\WordSearchGame\WordSearchGame\bin\Debug\net6.0-windows\WordSearchGame.dll
+C:\Users\patri\source\repos\WordSearchGame\WordSearchGame\bin\Debug\net6.0-windows\ref\WordSearchGame.dll
+C:\Users\patri\source\repos\WordSearchGame\WordSearchGame\bin\Debug\net6.0-windows\WordSearchGame.pdb
+C:\Users\patri\source\repos\WordSearchGame\WordSearchGame\obj\Debug\net6.0-windows\WordSearchGame.csproj.AssemblyReference.cache
+C:\Users\patri\source\repos\WordSearchGame\WordSearchGame\obj\Debug\net6.0-windows\WordSearchGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\patri\source\repos\WordSearchGame\WordSearchGame\obj\Debug\net6.0-windows\WordSearchGame.AssemblyInfoInputs.cache
+C:\Users\patri\source\repos\WordSearchGame\WordSearchGame\obj\Debug\net6.0-windows\WordSearchGame.AssemblyInfo.cs
+C:\Users\patri\source\repos\WordSearchGame\WordSearchGame\obj\Debug\net6.0-windows\WordSearchGame.csproj.CoreCompileInputs.cache
+C:\Users\patri\source\repos\WordSearchGame\WordSearchGame\obj\Debug\net6.0-windows\WordSearchGame.dll
+C:\Users\patri\source\repos\WordSearchGame\WordSearchGame\obj\Debug\net6.0-windows\ref\WordSearchGame.dll
+C:\Users\patri\source\repos\WordSearchGame\WordSearchGame\obj\Debug\net6.0-windows\WordSearchGame.pdb
+C:\Users\patri\source\repos\WordSearchGame\WordSearchGame\obj\Debug\net6.0-windows\WordSearchGame.genruntimeconfig.cache
