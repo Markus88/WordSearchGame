@@ -61,6 +61,15 @@ namespace WordSearchGame {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Pladen er desværre tom, så kan ikke vise snyde felterne..
+        /// </summary>
+        internal static string warningEmptyGridWinningTable {
+            get {
+                return ResourceManager.GetString("warningEmptyGridWinningTable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Der skal være {0} antal ord for at fylde pladen..
         /// </summary>
         internal static string warningGridAndAmountOfWordsMustMatch {

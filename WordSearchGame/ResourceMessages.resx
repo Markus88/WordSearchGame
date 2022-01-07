@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="warningEmptyGridWinningTable" xml:space="preserve">
+    <value>Pladen er desværre tom, så kan ikke vise snyde felterne.</value>
+  </data>
   <data name="warningGridAndAmountOfWordsMustMatch" xml:space="preserve">
     <value>Der skal være {0} antal ord for at fylde pladen.</value>
   </data>

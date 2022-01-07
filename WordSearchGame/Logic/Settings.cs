@@ -1,7 +1,7 @@
 ﻿namespace WordSearchGame.Logic
 {
     /// <summary>
-    /// Denne her fil er lidt rodet og giver ikke så meget mening. Vil være bedst og nemmest med lokal fil eller lign. 
+    /// Denne her fil er lidt rodet og giver ikke nødvendigvis så meget mening. Vil være bedst og nemmest med lokal fil eller lign. 
     /// En måde at holde noget persistence data. (F.eks gennem DB).
     /// </summary>
     public class Settings

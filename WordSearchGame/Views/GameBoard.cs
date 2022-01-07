@@ -12,7 +12,7 @@ namespace WordSearchGame
         public GameBoard()
         {
             InitializeComponent();
-            StartGameButtonStatus();
+            GameButtonsStatus();
 
             _settings = new Settings();
             _setupGameController = new SetupGameController();
@@ -47,15 +47,30 @@ namespace WordSearchGame
             // Tegne ide fra: https://msdn.microsoft.com/en-us/library/9why95hd%28v=vs.110%29.aspx?f=255&MSPPError=-2147217396
         }
 
-        private void StartGameButtonStatus()
+        private void GameButtonsStatus()
         {
+            // 'Start Spil' button
             if (string.IsNullOrEmpty(comboBox_gridSize.Text) || string.IsNullOrEmpty(textBox_wordList.Text)) button_startGame.Enabled = false;
             else button_startGame.Enabled = true;
+
+            // 'Snyd' button
+            if (string.IsNullOrEmpty(comboBox_gridSize.Text) || string.IsNullOrEmpty(textBox_wordList.Text)) button_seeWinningLocation.Enabled = false;
+            else button_seeWinningLocation.Enabled = true;
         }
         private void ClearGrid()
         {
             Invalidate();
             Refresh();
+        }
+
+        private void VerifyWordsAndLenght()
+        {
+            var extractedWords = textBox_wordList.Text;
+            if (!_setupGameController.VerifyWords(extractedWords, _settings.GridSize))
+            {
+                MessageBox.Show(string.Format(ResourceMessages.warningGridAndAmountOfWordsMustMatch, _settings.GridSize));
+                return;
+            }
         }
 
         #region Events
@@ -77,17 +92,23 @@ namespace WordSearchGame
 
         private void Button_seeWinningLocation_Click(object sender, EventArgs e)
         {
+            if(_gridInformations is null)
+            {
+                MessageBox.Show(ResourceMessages.warningEmptyGridWinningTable);
+                return;
+            }
+            VerifyWordsAndLenght();
             MapDataToGameBoard(Color.Red, _gridInformations.WinningGridLocation);
         }
 
         private void TextBox_wordList_Validating(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            StartGameButtonStatus();
+            GameButtonsStatus();
         }
 
         private void ComboBox_gridSize_Validating(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            StartGameButtonStatus();
+            GameButtonsStatus();
         }
         #endregion Events
     }
