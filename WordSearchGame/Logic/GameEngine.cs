@@ -38,11 +38,11 @@
             HandleSetupEmptyGrid(gridSize);
             PopulateGridWords(Words, Grid);
 
-            WinningGrid = ShallowCopy(Grid);
+            WinningGrid = DeepCopy(Grid);
             PopulateEmptyElements(Grid);
         }
 
-        private char[,] ShallowCopy(char[,] toCopy)
+        private char[,] DeepCopy(char[,] toCopy)
         {
             var tempValue = new char[Words.Length, Words.Length];
             Array.Copy(toCopy, 0, tempValue, 0, toCopy.Length);
